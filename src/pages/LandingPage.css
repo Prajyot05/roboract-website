@@ -1,0 +1,46 @@
+
+
+.mobilelogoshow{
+    display: none;
+}
+.logo{
+    display:flex ;
+}
+.clubtitle{
+    height: 50%;
+    font-size: 6vw;
+}
+.circle{
+    filter: blur(220px);
+}
+.aboutcontent{
+    font-size: 1.3vw;
+}
+@media screen and (max-width: 430px) {
+    .mobilelogoshow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    .mobilelogoshow div{
+        width:15vw;
+    }
+    .logo{
+        display: none;
+    }
+    .circle{
+        filter: blur(80px);
+    }
+    .clubtitle{
+        height: 0%;
+        font-size: 35px;
+    }
+    .clubsubtitle{
+        font-size: 18px;
+    }
+    .aboutcontent{
+        font-size: 10px;
+    }
+
+}
