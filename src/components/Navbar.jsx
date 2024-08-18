@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Hamburger from './Hamburger';
 
 const sectionIds = ['Home', 'About', 'Events', 'Team', 'Contact'];
 
@@ -41,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar w-full flex justify-between p-5 fixed z-50 ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="nav-left flex items-center">
+      <div className="nav-left flex cursor-pointer items-center">
         <img className='w-[4rem]' src="/assets/logo.png" alt="Rotaract Club Logo" />
         <h2 className='text-3xl pl-2 font-semibold'>Rotaract Club</h2>
       </div>
@@ -49,12 +50,15 @@ const Navbar = () => {
         {sectionIds.map((sectionId, i) => (
           <h3
             key={i}
-            className={`cursor-pointer ${activeLink === sectionId ? 'text-white' : ''}`}
+            className={`cursor-pointer hidden md:block ${activeLink === sectionId && 'text-white'}`}
             onClick={() => scrollToSection(sectionId)}
           >
             {sectionId}
           </h3>
         ))}
+        <div className="hamburger md:hidden">
+          <Hamburger />
+        </div>
       </div>
     </nav>
   );

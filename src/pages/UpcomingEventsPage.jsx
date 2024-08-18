@@ -21,7 +21,7 @@ const UpcomingEventsPage = () => {
 
   return (
     <div id='Events' className='events-page min-h-screen pt-10 pb-96'>
-      <h1 className='text-6xl uppercase text-center'>Upcoming Events</h1>
+      <h1 className='text-3xl sm:text-5xl lg:text-6xl uppercase w-fit mx-auto p-5 lg:p-10 rounded-[50px] bg-white shadow-lg'>Upcoming Events</h1>
       <div className="event-card-container flex flex-col md:flex-row px-5 lg:px-32 py-20 gap-[25rem] md:gap-20 justify-center">
         {eventCards.map((event, index) => (
           <div key={index} className="event-card relative md:w-full">
