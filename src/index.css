@@ -10,6 +10,11 @@
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
 }
+
+::selection{
+  background-color: #E7301C;
+  color: #062639;
+}
  
 html, body {
   height: 100%;
