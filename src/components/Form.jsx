@@ -14,7 +14,7 @@ const Form = () => {
                     <input
                       type="text"
                       placeholder="Name"
-                      className="border-[1.5px] px-4 py-3 placeholder-gray-500 text-rc-black bg-transparent outline-none border-gray-500 rounded-lg font-medium focus:border-primary focus:ring-primary active:border-primary w-full ease-linear transition-all duration-150"
+                      className="border-[1.5px] px-4 py-3 placeholder-gray-500 text-rc-black bg-transparent outline-none border-gray-300 rounded-lg font-medium focus:border-[#E7301C] focus:ring-red-500 active:border-[#E7301C] w-full ease-linear transition-all duration-150"
                     />
                   </div>
                 </div>
@@ -24,7 +24,7 @@ const Form = () => {
                     <input
                       type="text"
                       placeholder="Mobile"
-                      className="border-[1.5px] px-4 py-3 placeholder-gray-500 text-rc-black bg-transparent outline-none border-gray-500 rounded-lg font-medium focus:border-primary focus:ring-primary active:border-primary w-full ease-linear transition-all duration-150"
+                      className="border-[1.5px] px-4 py-3 placeholder-gray-500 text-rc-black bg-transparent outline-none border-gray-300 rounded-lg font-medium focus:border-[#E7301C] focus:ring-red-500 active:border-[#E7301C] w-full ease-linear transition-all duration-150"
                     />
                   </div>
                 </div>
@@ -34,7 +34,7 @@ const Form = () => {
                     <input
                       type="email"
                       placeholder="Email"
-                      className="border-[1.5px] px-4 py-3 placeholder-gray-500 text-rc-black bg-transparent outline-none border-gray-500 rounded-lg font-medium focus:border-primary focus:ring-primary active:border-primary w-full ease-linear transition-all duration-150"
+                      className="border-[1.5px] px-4 py-3 placeholder-gray-500 text-rc-black bg-transparent outline-none border-gray-300 rounded-lg font-medium focus:border-[#E7301C] focus:ring-red-500 active:border-[#E7301C] w-full ease-linear transition-all duration-150"
                     />
                   </div>
                 </div>
@@ -44,14 +44,14 @@ const Form = () => {
                     <textarea
                       rows="6"
                       placeholder="Message"
-                      className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none border-gray-500 focus:border-primary focus:ring-primary active:border-primary ease-linear transition-all duration-150"
+                      className="border-[1.5px] px-4 py-3 placeholder-gray-500 text-rc-black bg-transparent outline-none border-gray-300 rounded-lg font-medium focus:border-[#E7301C] focus:ring-red-500 active:border-[#E7301C] w-full ease-linear transition-all duration-150"
                     ></textarea>
                   </div>
                 </div>
               </div>
               <div className="flex justify-center mt-1">
                 <button
-                  className="bg-primary text-primary-content hover:bg-primary-dark active:bg-primary-dark font-bold uppercase text-sm mt-3 px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none transition duration-700 ease-in-out text-center w-36"
+                  className="hover:text-white hover:bg-[#E7301C] active:bg-primary-dark font-bold uppercase text-sm mt-3 px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none transition duration-700 ease-in-out text-center w-36"
                 >
                   Send Message
                 </button>
