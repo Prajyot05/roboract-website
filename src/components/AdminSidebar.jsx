@@ -110,7 +110,7 @@ const AdminSidebar = ({toggleSidebar, isOpen}) => {
                     Events
                 </Link>
                 </li>
-                <li className="items-center">
+                {/* <li className="items-center">
                 <Link
                     className="text-xs uppercase py-3 font-bold block text-slate-700 hover:text-slate-500"
                     to="/admin/settings"
@@ -118,7 +118,7 @@ const AdminSidebar = ({toggleSidebar, isOpen}) => {
                     <i className="fa-solid fa-trophy mr-2 text-sm text-slate-300"></i>{" "}
                     Achievements
                 </Link>
-                </li>
+                </li> */}
                 <li className="items-center">
                 <Link
                     className="text-xs uppercase py-3 font-bold block text-slate-700 hover:text-slate-500"

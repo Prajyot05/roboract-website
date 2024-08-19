@@ -13,7 +13,7 @@ const AdminPage = () => {
   };
 
   return (
-    <div id="root">
+    <div id="admin-page">
         <AdminSidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
         <div className="relative md:ml-64 bg-slate-50">
             <AdminNavbar />
@@ -23,32 +23,32 @@ const AdminPage = () => {
                     <div>
                         <div className="flex flex-wrap">
                         <Card
-                            bgColor="bg-rc-blue"
+                            bgColor="bg-blue-600"
                             title="ROTARACTORS"
                             value="350,897"
                             icon={faUser}
-                            iconColor="text-rc-blue"
+                            iconColor="text-white"
                         />
                         <Card
-                            bgColor="bg-rc-red"
+                            bgColor="bg-red-600"
                             title="NEW ROTARACTORS"
                             value="2,356"
                             icon={faUserPlus}
-                            iconColor="text-rc-red"
+                            iconColor="text-white"
                         />
                         <Card
-                            bgColor="bg-rc-yellow"
+                            bgColor="bg-yellow-600"
                             title="ALUMNIS"
                             value="924"
                             icon={faUserGraduate}
-                            iconColor="text-rc-yellow"
+                            iconColor="text-white"
                         />
                         <Card
-                            bgColor="bg-rc-black"
+                            bgColor="bg-black"
                             title="TOTAL"
                             value="48,54,123"
                             icon={faUsers}
-                            iconColor="text-rc-black"
+                            iconColor="text-white"
                         />
                         </div>
                     </div>
@@ -63,14 +63,14 @@ const AdminPage = () => {
                         chartId="line-chart"
                     />
                     </div>
-                    <div className="w-full xl:w-4/12 px-2 mb-12 mt-0 xl:mt-44">
+                    {/* <div className="w-full xl:w-4/12 px-2 mb-12 mt-0 xl:mt-44">
                     <CardChart
                         bgColor="bg-white"
                         title="Total orders"
                         subtitle="Performance"
                         chartId="bar-chart"
                     />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-wrap mt-4 px-2 md:px-8 mx-auto">
                     <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
@@ -82,7 +82,7 @@ const AdminPage = () => {
                 </div>
             </div>
         </div>
-</div>
+    </div>
   )
 }
 
@@ -92,8 +92,8 @@ const Card = ({ bgColor, title, value, icon, iconColor }) => (
         <div className="flex-auto p-4">
           <div className="flex flex-wrap">
             <div className="relative w-full pr-4 max-w-full flex-grow flex-1">
-              <h5 className="uppercase font-bold text-xs text-rc-white">{title}</h5>
-              <span className="font-semibold text-xl text-rc-white">{value}</span>
+              <h5 className="uppercase font-bold text-xs text-gray-200">{title}</h5>
+              <span className="font-semibold text-xl text-gray-300">{value}</span>
             </div>
             <div className="relative w-auto pl-4 flex-initial">
               <div className={`bg-rc-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full text-lg ${iconColor}`}>

@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const AdminNavbar = () => {
   return (
@@ -27,7 +29,7 @@ const AdminNavbar = () => {
             <Link className="text-slate-500 block" to="#pablo">
                 <div className="items-center flex">
                 <span className="w-12 h-12 text-xl text-slate-800 bg-slate-100 inline-flex items-center justify-center rounded-full">
-                    <i className="fa-solid fa-user"></i>
+                    <FontAwesomeIcon icon={faUser} />
                 </span>
                 </div>
             </Link>
@@ -52,7 +54,7 @@ const AdminNavbar = () => {
                 className="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                 to="/"
                 >
-                Sign Out <i className="fa-solid fa-right-to-bracket"></i>
+                Sign Out <FontAwesomeIcon icon={faUser} />
                 </Link>
             </div>
             </ul>
