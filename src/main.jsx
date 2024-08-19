@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AdminPage from './pages/AdminPage.jsx'
+import Alumnilist from './pages/Alumnilist.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
           <Route path="/" element={<App />} />
           <Route path='/admin' element={<AdminPage />} />
+          <Route path='/admin/aluminilist' element={<Alumnilist/>} />
       </Routes>
     </Router>
   </StrictMode>,
