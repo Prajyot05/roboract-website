@@ -7,11 +7,14 @@ import CarouselPage from './pages/CarouselPage'
 import TeamPage from './pages/TeamPage'
 import ContactPage from './pages/ContactPage'
 import FooterPage from './pages/FooterPage'
+import { NavProvider } from './context/NavbarContext'
+import MobileNav from './pages/MobileNav'
 
 function App() {
 
   return (
-    <>
+    <NavProvider>
+      <MobileNav />
       <Navbar />
       <LandingPage />
       <AboutPage />
@@ -20,7 +23,7 @@ function App() {
       <TeamPage />
       <ContactPage />
       <FooterPage />
-    </>
+    </NavProvider>
   )
 }
 
