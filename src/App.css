@@ -89,7 +89,21 @@
 .aboutcontent{
     font-size: 1.3vw;
 }
+.main{
+    gap: 5vw;
+}
+@media screen and (max-width: 780px) {
+    .main{
+        background-color: #d3531a;
+        gap: 0vw;
+    }
+}
+
+
 @media screen and (max-width: 430px) {
+    .main{
+        gap: 5vw;
+    }
     .mobilelogoshow{
         display: flex;
         justify-content: center;
@@ -114,6 +128,9 @@
     }
     .aboutcontent{
         font-size: 10px;
+    }
+    .cards{
+        margin: 15px;
     }
 
 }

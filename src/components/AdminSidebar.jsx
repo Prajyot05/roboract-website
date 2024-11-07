@@ -170,13 +170,13 @@ const AdminSidebar = ({toggleSidebar, isOpen}) => {
                 <li className="items-center">
                 <Link
                     className="text-xs uppercase py-3 font-bold block text-slate-700 hover:text-slate-500"
-                    to="/admin/dashboard"
+                    to="/admin/aluminilist"
                 >
                     <i className="fa-regular fa-rectangle-list mr-2 text-sm text-slate-300"></i>{" "}
                     Alumni List
                 </Link>
                 </li>
-                <li className="items-center">
+                {/* <li className="items-center">
                 <Link
                     className="text-xs uppercase py-3 font-bold block text-slate-700 hover:text-slate-500"
                     to="/admin/dashboard"
@@ -184,7 +184,7 @@ const AdminSidebar = ({toggleSidebar, isOpen}) => {
                     <i className="fa-solid fa-user-plus mr-2 text-sm text-slate-300"></i>{" "}
                     Add New Alumni
                 </Link>
-                </li>
+                </li> */}
             </ul>
             </div>
         </div>

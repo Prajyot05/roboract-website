@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react'
 import { NavContext } from '../context/NavbarContext';
 
-const sectionIds = ['Home', 'About', 'Events', 'Team', 'Contact'];
+const sectionIds = ['Home', 'About', 'Events', 'Team', 'Contact', 'Login'];
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('Home');

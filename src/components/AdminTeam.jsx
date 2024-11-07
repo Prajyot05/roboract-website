@@ -31,6 +31,42 @@ const AdminPage = () => {
       location: 'Chicago, Illinois',
       image: '/assets/team/Treasurer.jpg',
     },
+    {
+      id: 4,
+      name: 'Jenna Stones',
+      location: 'Los Angeles, California',
+      image: '/assets/team/President.jpg',
+    },
+    {
+      id: 5,
+      name: 'John Doe',
+      location: 'New York, New York',
+      image: '/assets/team/Secretary.jpg',
+    },
+    {
+      id: 6,
+      name: 'Jane Smith',
+      location: 'Chicago, Illinois',
+      image: '/assets/team/Treasurer.jpg',
+    },
+    {
+      id: 7,
+      name: 'Jenna Stones',
+      location: 'Los Angeles, California',
+      image: '/assets/team/President.jpg',
+    },
+    {
+      id: 8,
+      name: 'John Doe',
+      location: 'New York, New York',
+      image: '/assets/team/Secretary.jpg',
+    },
+    {
+      id: 9,
+      name: 'Jane Smith',
+      location: 'Chicago, Illinois',
+      image: '/assets/team/Treasurer.jpg',
+    },
   ];
 
   return (
